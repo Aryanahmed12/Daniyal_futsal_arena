@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Checkout') {
-      steps { git branch: 'main', url: 'https://github.com/ramishminhas91-star/mern-food.git'}
+      steps { git branch: 'main', url: 'https://github.com/Aryanahmed12/Daniyal_futsal_arena.git'}
     }
 
     stage('Prepare Env File') {
