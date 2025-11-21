@@ -14,7 +14,7 @@ pipeline {
         withCredentials([string(credentialsId: 'JWT_SECRET', variable: 'JWT_SECRET')]) {
           sh '''
             echo "PORT=5000" > backend/.env
-            echo "MONGO_URI=mongodb://mongo:27017/mern_food" >> backend/.env
+            echo "MONGO_URI=mongodb://localhost:27017/dani-sports-arena" >> backend/.env
             echo "JWT_SECRET=${JWT_SECRET}" >> backend/.env
           '''
         }
